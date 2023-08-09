@@ -71,7 +71,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     width: 45%;   
     margin-right: 10%;
-}
+} 
     
 .image-container {
     display: flex;
@@ -79,6 +79,23 @@ body {
     align-items: center;
     width: 45%;
     text-align: left;
+}
+
+@media (max-width: 767px) { 
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+
+ .form-container {
+    width: 100%;   
+    margin: 0% 0% 20% 0%;
+  } 
+      
+  .image-container {
+    width: 100%;    
+  }
 }
 
 .image-container p, .image-container li {
@@ -144,11 +161,8 @@ button {
 
       <div class="video-overlay header-text">
           <div class="caption">
- 
-
-
-          <div class="container">
-  <div class="form-container">
+            <div class="container">
+              <div class="form-container">
 
 
   <form method="POST" id="TRWVLCPForm" name="TRWVLCPForm" action="https://www.trafficwave.net/cgi-bin/autoresp/inforeq.cgi">
