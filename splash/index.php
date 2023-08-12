@@ -55,98 +55,98 @@ function validateEmail(email) { /* validation for email field */
 </script>
 <style>
 
-body {
-  margin: 0;
-}
-
-.container {
-  display: flex;
-}
-
- .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 45%;   
-    margin-right: 10%;
-} 
-    
-.image-container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 45%;
-    text-align: left;
-}
-
-@media (max-width: 767px) { 
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
+  body {
+    margin: 0;
   }
 
- .form-container {
-    width: 100%;   
-    margin: 0% 0% 20% 0%;
+  .container {
+    display: flex;
+  }
+
+  .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 45%;   
+      margin-right: 10%;
   } 
       
   .image-container {
-    width: 100%;    
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      width: 45%;
+      text-align: left;
   }
-}
 
-.image-container p, .image-container li {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 22px; 
-  opacity: 0.7;
-}
+  @media (max-width: 767px) { 
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15%;
+    }
 
-.image-container h1 {
-  font-size: 2.5em;
-}
+  .form-container {
+      width: 100%;   
+      margin: 0% 0% 20% 0%;
+    } 
+        
+    .image-container {
+      width: 100%;    
+    }
+  }
 
-form {
-  padding: 30px;
-}
+  .image-container p, .image-container li {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 22px; 
+    opacity: 0.7;
+  }
 
-h1 {
-  color: #FFF;
-  margin: 0;
-  font-size: 2em;
-}
+  .image-container h1 {
+    font-size: 2.5em;
+  }
 
-label, input, button {
-  margin: 10px 0;
-}
+  form {
+    padding: 30px;
+  }
 
-label {
-  color: #FFF;
-}
+  h1 {
+    color: #FFF;
+    margin: 0;
+    font-size: 2em;
+  }
 
-input {
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  box-sizing: border-box;
-}
+  label, input, button {
+    margin: 10px 0;
+  }
 
-button {
-  width: 100%;
-  background-color: #FF0000;
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 700;
-  padding: 12px 20px;
-  display: inline-block;
-  outline: none;
-  cursor:pointer;
-}
+  label {
+    color: #FFF;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    background-color: #FF0000;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 12px 20px;
+    display: inline-block;
+    outline: none;
+    cursor:pointer;
+  }
 </style>
 
   </head>
@@ -168,8 +168,7 @@ button {
   <form method="POST" id="TRWVLCPForm" name="TRWVLCPForm" action="https://www.trafficwave.net/cgi-bin/autoresp/inforeq.cgi">
 
 
-<h1>  <i class="fa-solid fa-file-pdf"></i> GET YOUR FREE <em>HTML</em> CHEAT SHEET</h1>
-<h3></h3>
+<h1> <i class="fa-solid fa-file-pdf"></i> GET YOUR FREE <em>HTML</em> CHEAT SHEET</h1>
 <label for="email">And code like a ninja today!</label>
 
 <input type="email" id="da_email" name="da_email" value="Enter your best email" onclick="this.value=''" required>
@@ -182,6 +181,7 @@ button {
 <input type="hidden" name="subscrLandingURL" value="<?=$subscrLandingURL?>">
 <input type="hidden" name="confirmLandingURL" value="<?=$confirmLandingURL?>">
 <input type="hidden" name="langPref" value="en"><input type="hidden" name="lcpID" value=""><input type="hidden" name="lcpDE" value="0">
+<input type="hidden" name="da_cust1" value="<?=$_GET['campaign']?>">
 
 </form>
   </div>
