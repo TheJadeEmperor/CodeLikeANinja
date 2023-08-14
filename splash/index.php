@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,9 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <title>Code like a ninja</title>
-    
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/templatemo-grad-school.css"> 
@@ -25,7 +18,6 @@
 
 
     <script>
-
 var NoExitPage = false; 
 
 function ExitPage() { 
@@ -156,7 +148,7 @@ function validateEmail(email) { /* validation for email field */
   <section class="section main-banner" id="top" data-section="section1">
       
       <video autoplay muted loop id="bg-video">
-          <source src="assets/images/computer.mp4" type="video/mp4" />
+          <source src="assets/computer.mp4" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -168,8 +160,8 @@ function validateEmail(email) { /* validation for email field */
   <form method="POST" id="TRWVLCPForm" name="TRWVLCPForm" action="https://www.trafficwave.net/cgi-bin/autoresp/inforeq.cgi">
 
 
-<h1> <i class="fa-solid fa-file-pdf"></i> GET YOUR FREE <em>HTML</em> CHEAT SHEET</h1>
-<label for="email">And code like a ninja today!</label>
+<h1> <i class="fa-solid fa-file-pdf"></i> Download YOUR FREE <em>HTML</em> CHEAT SHEET Immediately</h1>
+<label for="email">Download link will be sent directly to your email</label>
 
 <input type="email" id="da_email" name="da_email" value="Enter your best email" onclick="this.value=''" required>
 
@@ -193,13 +185,16 @@ function validateEmail(email) { /* validation for email field */
 
       <p>
         <ul><li><i class="fa-sharp fa-solid fa-user-ninja"></i> Launch your first website in as little as a week</li>
-        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Learn HTML & CSS Basics and Javascript as well as scripting languages like PHP and database languages like MySQL</li>
-      <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Take our online cram course and learn to code like a ninja</li>
-      <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Live 1 on 1 personalized training </li>
-      <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Start your career in web development with our career advice and interview tips</li>
-      <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Your final project will be presentable to employers and interview-ready</li>
-    
-    </ul>
+        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Live 1 on 1 personalized training  </li> 
+        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Master the basics of HTML & CSS with our bootcamp</li>
+
+        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Be an advanced admin of databases with our MySQL course</li>
+        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Create beautiful websites like the pros you once admired</li>
+        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> How to use chatgpt to write bug-free code </li>
+        <li><i class="fa-sharp fa-solid fa-user-ninja"></i> Jump start your career in web development with our career advice and interview tips </li>
+
+
+        </ul>
      </p>
 
     </div>
