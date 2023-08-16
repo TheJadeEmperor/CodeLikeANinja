@@ -26,9 +26,9 @@ function ExitPage() {
     location.href='<?=$landingURL?>'; 
     
     return"***********************************************\n\n"+ 
-    " WAIT! Sign up to get your FREE Neobux Report! \n\n"+ 
-    " Learn how to get 40+ Direct Referrals Overnight! \n\n"+ 
-    " Click the [Cancel] button to Download Your FREE GIFT!\n\n"+ 
+    " WAIT! Sign up to get your FREE Cheat Sheet! \n\n"+ 
+    " Gain mastery of full stack with our bootcamp! \n\n"+ 
+    " Start your web dev career with us!\n\n"+ 
     "***********************************************"; 
     } 
 } 
@@ -45,6 +45,15 @@ function validateEmail(email) { /* validation for email field */
     }
 }
 </script>
+
+<!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_flvh41jcw', {"optOut":false,"useDecimalCurrencyValues":true,"email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>"});rdt('track', 'PageVisit');
+</script>
+<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+<!-- End Reddit Pixel -->
+
+
 <style>
 
   body {
@@ -142,7 +151,7 @@ function validateEmail(email) { /* validation for email field */
 </style>
 
   </head>
-<body>
+<body onbeforeunload="return ExitPage();">
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
