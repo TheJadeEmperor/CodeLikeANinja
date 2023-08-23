@@ -20,8 +20,12 @@ body {
     align-items: center;
     min-height: 300px;
     color: white;
-    text-align: center;
     font-size: 24px;
+    padding: 0px 10%;
+}
+
+.hero h1 {
+    text-align: center;
 }
 
 .black {
@@ -34,7 +38,7 @@ body {
 }
 
 .blue {
-    background-color: blue;
+    background-color: rgb(80, 80, 203);
 }
 
 </style>
@@ -48,8 +52,6 @@ body {
     <title>Hero Blocks</title>
 </head>
 
-
-
 <body>
 	<div class="menubar">
 		ninja logo 
@@ -57,20 +59,167 @@ body {
 
 	<div class="hero black">
         <div class="content">
-            <h1>Black Hero Block</h1>
-            <p>This is the black hero block content.</p>
+            <h1>Launch Your Web Developer Career in just 8 weeks! </h1>
+            <p>Our comprehensive video course will guide you step by step in the process – from launching your first website to starting your own career! </p>
         </div>
     </div>
     <div class="hero white">
         <div class="content">
-            <h1>White Hero Block</h1>
-            <p>This is the white hero block content.</p>
+            <h1>What makes our video course different? </h1>
+            <p>Hi, my name is Benjamin Louie, and I have been a web developer for the past 14 years and I have been teaching web development for 1 year. Unlike other professors, I teach from work experience in my career. Many online courses can teach theory only, as they have not worked a single day in the field. My classes also teach theory, but we spend more time on real world examples.</p>
+
+            <p>I know what companies want from an employee and what employers look for in interviews. My classes cover projects I have done for corporations. </p>
+
+            <p>Unlike other courses, where the teacher speaks to an empty room, you will watch me interact with my students who took the bootcamp, where they ask me questions, questions that you might have. In these classes, students submit websites to me so I can recreate them from scratch using the concepts they’ve learned thus far. As far as I know, no one does this. </p>
+
+            <p>Each module has exercise for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test.  </p>
         </div>
     </div>
     <div class="hero blue">
         <div class="content">
-            <h1>Blue Hero Block</h1>
-            <p>This is the blue hero block content.</p>
+            <h1>Outline of the bootcamp</h1>
+            <h2>Week 1 – BASH, HTML and Wireframes ~ 2.5 hours</h2>
+            <ul>
+                <li> ~60m - Before we jump into HTML, you will learn BASH, the linux programming language. After learning BASH, you can put on your resume that you know how to use linux machines</li>
+                <li> ~60m - Introduction to HTML – In this short lesson you will learn all you need to know about HTML</li>
+                <li> ~30m – You will learn how to make mockups using draw.io – it is crucial to wireframe your website before you write any code</li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero white">
+        <div class="content">
+            <h2>Week 2 – CSS Basics ~ 6 hours</h2>
+
+            <ul>
+                <li> ~30m – How to use Trello to manage your projects, many companies favor Trello over JIRA because of its UI and simplicity</li>
+                <li> ~60m – Github crash course – absorb everything you need to know about using Github to save your code, including creating a repository, cloning a repo, creating branches and solving conflicts</li>
+                <li>~60m – Master the crucial CSS box model for margins and padding</li>
+                <li>~60m – Demystify the CSS display-block model and align elements easily</li>
+                <li>~60m – Master responsive design, a must-have skill in our mobile-dominated world</li>
+                <li>~30m – Manipulate font sizes using px and rem</li>
+                <li>~60m – Watch as students send me random websites and I re-create them from scratch using what we’ve learned</li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="hero blue">
+        <div class="content">
+            <h2>Week 3 – CSS Mastery ~ 6 hours</h2>
+            <?php
+            $bullets = array(
+              '~60m - CSS Advanced selectors – after you master this skill you will become a true CSS Ninja',
+              '~60m - Demystify making menu’s from CSS, now you can look at another website’s menu and say “Oh that’s how they did it”',
+              '~60m – CSS positions – how to position images and other elements', 
+            '~60m – How to use the al-important flexbox in responsive design',
+            '~120m – Learn Javascript basics',
+            '~120m -  Learn Javascript loops and logic',
+            );
+            
+            echo '<ul>';
+            foreach($bullets as $points) {
+              echo '<li>'.$points.'</li>';
+            }
+            echo '</ul>';
+            ?>
+        </div>
+    </div>
+    <div class="hero white">
+        <div class="content">
+            <h2>Week 4 – Javascript Ninjitsu ~6 hours</h2>
+            <?php
+            $bullets = array(
+                '0726 - Javascript Logic',
+                '0728 - Javascript & SEO',
+                '0802 - Javascript collections  while loop  mouse events',
+                '0804 - Bootstrap  Intro to PHP'
+            );
+            
+            echo '<ul>';
+            foreach($bullets as $points) {
+              echo '<li>'.$points.'</li>';
+            }
+            echo '</ul>';
+            ?>
+        </div>
+    </div>
+    <div class="hero blue" id="week5">
+        <div class="content">
+            <h2>Week 5 – PHP Power</h2>
+            <?php
+            $bullets = array(
+                '0809 - Bootstrap  Gradients  Tic Tac Toe exercise',
+                '0811 - PHP Arrays & Form Processing',
+                '0816 - Project 2 Presentation & Website Launch',
+                '0818 - php $_GET & sessions  interview practice',                
+            );
+            
+            echo '<ul>';
+            foreach($bullets as $points) {
+              echo '<li>'.$points.'</li>';
+            }
+            echo '</ul>';
+            ?>
+        </div>
+    </div>
+    <div class="hero white" id="week6">
+        <div class="content">
+            <h2>Week 5 – PHP Power</h2>
+            <?php
+            $bullets = array(
+                '0823 - php includerequire  multi-dimensional arrays
+                0825 - Intro to jQuery & jQueryUI
+                0830 - jQuery & Ajax
+                0901 - Intro to MySQL  Interview Prep',                             
+            );
+            
+            echo '<ul>';
+            foreach($bullets as $points) {
+              echo '<li>'.$points.'</li>';
+            }
+            echo '</ul>';
+            ?>
+        </div>
+    </div>
+    <div class="hero blue" id="week7">
+        <div class="content">
+            <h2>Week 5 – PHP Power</h2>
+            <?php
+            $bullets = array(
+                '0906 - Connect MySQL to PHP  User login system
+                0908 - User login  PHP Encrypt Passwords
+                0913 - PHP MySQL Exporting CSV Files
+                0915 - PHP classes & Objects - OOP
+                ',                             
+            );
+            
+            echo '<ul>';
+            foreach($bullets as $points) {
+              echo '<li>'.$points.'</li>';
+            }
+            echo '</ul>';
+            ?>
+        </div>
+    </div>
+
+    <div class="hero white" id="week8">
+        <div class="content">
+            <h2>Week 5 – PHP Power</h2>
+            <?php
+            $bullets = array(
+                '~60m - Introduction to Wordpress, the #1 used platform on the internet, a must have skill if you want to be a web dev
+                ~60m - How to power up Wordpress with plugins
+                ~60m - Mastery of PHP routing using .htaccess
+                ~60m - How to using post variables & json format
+                ~60m - Review of everything we’ve learned                
+                ',                    
+            );
+            
+            echo '<ul>';
+            foreach($bullets as $points) {
+              echo '<li>'.$points.'</li>';
+            }
+            echo '</ul>';
+            ?>
         </div>
     </div>
 </body>
