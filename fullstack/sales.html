@@ -41,6 +41,29 @@ body {
     background-color: rgb(80, 80, 203);
 }
 
+.ctaButton {
+    background-color: #0066b8;
+    border: none;
+    color: #fff !important;
+    margin: 20px 0;
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 35px;
+    display: inline-block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.ctaButton:hover {
+    background-color: #005ba4;
+}
+
+.center {
+    text-align: center;
+}
+
+
 </style>
 
 <!DOCTYPE html>
@@ -61,6 +84,8 @@ body {
         <div class="content">
             <h1>Launch Your Web Developer Career in just 8 weeks! </h1>
             <p>Our comprehensive video course will guide you step by step in the process – from launching your first website to starting your own career! </p>
+
+            <p>This Full Stack course has over 50 hours of content. You can go back and review it at any time by logging into your members area. We use the most efficient teaching methods to take you from zero to ninja in just 8 weeks.</p>
         </div>
     </div>
     <div class="hero white">
@@ -68,11 +93,11 @@ body {
             <h1>What makes our video course different? </h1>
             <p>Hi, my name is Benjamin Louie, and I have been a web developer for the past 14 years and I have been teaching web development for 1 year. Unlike other professors, I teach from work experience in my career. Many online courses can teach theory only, as they have not worked a single day in the field. My classes also teach theory, but we spend more time on real world examples.</p>
 
-            <p>I know what companies want from an employee and what employers look for in interviews. My classes cover projects I have done for corporations. </p>
+            <p>I know what companies want from an employee and what employers look for in interviews. My classes cover projects I have done for corporations. In addition to coding, I give some invaluable interview advice in the courses.</p>
 
             <p>Unlike other courses, where the teacher speaks to an empty room, you will watch me interact with my students who took the bootcamp, where they ask me questions, questions that you might have. In these classes, students submit websites to me so I can recreate them from scratch using the concepts they’ve learned thus far. As far as I know, no one does this. </p>
 
-            <p>Each module has exercise for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test.  </p>
+            <p>Each module has exercises for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test. It is recommended you do not skip the projects, otherwise you wll not become a true code ninja.</p>
         </div>
     </div>
     <div class="hero blue">
@@ -86,7 +111,7 @@ body {
             </ul>
         </div>
     </div>
-    <div class="hero white">
+    <div class="hero black">
         <div class="content">
             <h2>Week 2 – CSS Basics ~ 6 hours</h2>
 
@@ -102,7 +127,7 @@ body {
 
         </div>
     </div>
-    <div class="hero blue">
+    <div class="hero white">
         <div class="content">
             <h2>Week 3 – CSS Mastery ~ 6 hours</h2>
             <?php
@@ -123,15 +148,17 @@ body {
             ?>
         </div>
     </div>
-    <div class="hero white">
+    <div class="hero blue">
         <div class="content">
             <h2>Week 4 – Javascript Ninjitsu ~6 hours</h2>
             <?php
             $bullets = array(
-                '0726 - Javascript Logic',
-                '0728 - Javascript & SEO',
-                '0802 - Javascript collections  while loop  mouse events',
-                '0804 - Bootstrap  Intro to PHP'
+                '~60m – Learn more Javascript logic such as conditionals & while loops',
+                '~60m – How to use SEO properly on your website',
+                '~60m – Manage Javascript collections like arrays',
+                '~60m – How to use mouse events to interact with the user', 
+                '~60m - How to use Bootstrap, the number one CSS & Javascript framework, for designing responsive websites – never design anything from scratch again',
+                '~60m – Learn PHP, your first server side language – generate dynamic, websites and take your first step to becoming a full stack ninja'
             );
             
             echo '<ul>';
@@ -142,15 +169,19 @@ body {
             ?>
         </div>
     </div>
-    <div class="hero blue" id="week5">
+    <div class="hero white" id="week5">
         <div class="content">
             <h2>Week 5 – PHP Power</h2>
             <?php
             $bullets = array(
-                '0809 - Bootstrap  Gradients  Tic Tac Toe exercise',
-                '0811 - PHP Arrays & Form Processing',
-                '0816 - Project 2 Presentation & Website Launch',
-                '0818 - php $_GET & sessions  interview practice',                
+                '~60m – Bootstrap Part 2 – We continue to drill Bootstrap skills until you know it by heart and this module also covers gradients to beautify your designs',
+                '~60m – PHP arrays – learn what arrays are and how to use them in different scenarios',
+                '~60m – PHP form processing – in previous modules you learned to make HTML forms, and now you will know what to do with the user submitted data',
+                 
+                '0811 - PHP Arrays & Form Processing
+                0816 - Project 2 Presentation & Website Launch
+                0818 - php $_GET & sessions   
+                ~60m – Interview advice – My students and I discuss what interviews are like and I give them interview advice',                
             );
             
             echo '<ul>';
@@ -161,9 +192,9 @@ body {
             ?>
         </div>
     </div>
-    <div class="hero white" id="week6">
+    <div class="hero blue" id="week6">
         <div class="content">
-            <h2>Week 5 – PHP Power</h2>
+            <h2>Week 6 – PHP Mastery</h2>
             <?php
             $bullets = array(
                 '0823 - php includerequire  multi-dimensional arrays
@@ -180,9 +211,9 @@ body {
             ?>
         </div>
     </div>
-    <div class="hero blue" id="week7">
+    <div class="hero white" id="week7">
         <div class="content">
-            <h2>Week 5 – PHP Power</h2>
+            <h2>Week 7 – MySQL Databases</h2>
             <?php
             $bullets = array(
                 '0906 - Connect MySQL to PHP  User login system
@@ -201,17 +232,16 @@ body {
         </div>
     </div>
 
-    <div class="hero white" id="week8">
+    <div class="hero blue" id="week8">
         <div class="content">
-            <h2>Week 5 – PHP Power</h2>
+            <h2>Week 8 ~ Intro to Wordpress </h2>
             <?php
             $bullets = array(
-                '~60m - Introduction to Wordpress, the #1 used platform on the internet, a must have skill if you want to be a web dev
-                ~60m - How to power up Wordpress with plugins
-                ~60m - Mastery of PHP routing using .htaccess
-                ~60m - How to using post variables & json format
-                ~60m - Review of everything we’ve learned                
-                ',                    
+                '~60m - Introduction to Wordpress, the #1 used platform on the internet, a must have skill if you want to be a web dev',
+                '~60m - How to power up Wordpress with plugins',
+                '~60m - Mastery of PHP routing using .htaccess',
+                '~60m - How to using post variables & json format',
+                '~60m - Review of everything we’ve learned',                    
             );
             
             echo '<ul>';
@@ -222,5 +252,22 @@ body {
             ?>
         </div>
     </div>
-</body>
-</html>
+
+    <div class="hero white" id="cta">
+        <div class="content">
+
+            <h1>Be A Full Stack Ninja for $49.99</h1>
+            <p>Videos will be available in the members area immediately after purchase</p>
+            
+            <p>Get the full stack bootcamp now for only $49.99</p>
+            <p class="center"><button class="ctaButton">Get it Now</button></p>
+
+
+            <p>All the videos are paced so that you can have time to prctice on your own. In the first week you can access the first week's courses and in week two, you will unlock week 2's courses, and so on. </p>
+
+            <p>Every several weeks there will be a project to do. For maximum benefit, it is recommended that you do these projects as if you were  astudent enrolled in the live class. </p>
+
+            <p>&nbsp;</p>
+        </div>
+    </div>
+ 
