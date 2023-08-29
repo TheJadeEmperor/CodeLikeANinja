@@ -204,15 +204,7 @@ function validateEmail(email) { /* validation for email field */
 </style>
 </head>
 <body onbeforeunload="return ExitPage();">
-
-  <nav class="menu-bar" title="<?=$alt?>">
-    <div class="logo">
-        <img src="../images/ninja.jpg" alt="<?=$alt?>"><span class="logo-text">Code Like A Ninja</span>
-    </div>
-    <div class="menu-text">
-        <a href="#da_email"><button class="ctaButton">Sign up to our newsletter</a></button> <button class="ctaButton"><a href="#da_email">Enroll in our full stack course</a></button>
-    </div>
-  </nav>
+ 
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
