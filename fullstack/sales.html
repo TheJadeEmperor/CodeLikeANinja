@@ -1,91 +1,49 @@
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 
-.menubar {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 12px;
-}
+<nav class="menu-bar" title="<?=$alt?>">
+    <div class="logo">
+        <img src="../images/ninja.jpg" alt="<?=$alt?>"><span class="logo-text">Code Like A Ninja</span>
+    </div>
+    <div class="menu-text">
+        <a href="./splash">Newsletter</a>
+        <a href="./">Full Stack</a>
+        <a href="./">Login</a>
+    </div>
+</nav>
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-    color: white;
-    font-size: 24px;
-    padding: 0px 10%;
-}
+<div class="container hero black">
+    <div class="box">
+        <h1>Launch Your Web Developer Career in just 8 weeks! </h1>
+    </div>
+    <div class="box code">
+        
+        <br /><br />
 
-.hero h1 {
-    text-align: center;
-}
+        <span class="lightOrange">cssIsEasy { <span class="blink">&nbsp;|</span><br />
+        <span class="lightBlue tab"> easy: </span> <span class="yellow">1;</span> <span class="comment">//be a css ninja in a few weeks</span><br />
+        <span class="lightBlue tab"> fun: </span><span class="yellow"> 1; </span> <span class="comment">//the best way to learn coding</span> <br />
+        <span class="lightBlue tab"> difficult: </span> <span class="yellow">0;</span> <span class="comment"> //our classes make things simple for you to digest </span><br />
+        <span class="lightBlue tab"> complicated: </span><span class="yellow"> 0; </span> <span class="comment">//you will never feel confused</span> <br />
+        <span class="lightOrange">} </span>
+    
+        <br /><br />
 
-.black {
-    background-color: #2c2c32;
-}
+        <span class="lightOrange">fullStackCourse { </span><br />
+        <span class="lightBlue tab"> length:</span><span class="yellow">>= 100 hours; </span></span><br />
+        <span class="lightBlue tab"> languages: </span><span class="yellow"> HTML CSS JS jQuery MySQL PHP </span><br />
+        <span class="lightBlue tab"> include:</span><span class="yellow">real world examples</span> <br />
+        <span class="lightBlue tab"> exercises:</span><span class="yellow">scenarios for skill sharpening</span> <br />
+        <span class="lightBlue tab"> projects:</span><span class="yellow">to test your skills</span> <br />
+        <span class="lightOrange">} </span><br />
 
-.white {
-    background-color: white;
-    color: black;
-}
-
-.blue {
-    background-color: rgb(80, 80, 203);
-}
-
-.ctaButton {
-    background-color: #0066b8;
-    border: none;
-    color: #fff !important;
-    margin: 20px 0;
-    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    padding: 15px 35px;
-    display: inline-block;
-    color: inherit;
-    cursor: pointer;
-}
-
-.ctaButton:hover {
-    background-color: #005ba4;
-}
-
-.center {
-    text-align: center;
-}
-
-
-</style>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Hero Blocks</title>
-</head>
-
-<body>
-	<div class="menubar">
-		ninja logo 
-	</div>
+    </div>
+  </div>
 
 	<div class="hero black">
         <div class="content">
-            <h1>Launch Your Web Developer Career in just 8 weeks! </h1>
+            
             <p>Our comprehensive video course will guide you step by step in the process – from launching your first website to starting your own career! </p>
 
-            <p>This Full Stack course has over 50 hours of content. You can go back and review it at any time by logging into your members area. We use the most efficient teaching methods to take you from zero to ninja in just 8 weeks.</p>
+            <p>This Full Stack course has over 100 hours of content. You can go back and review it at any time by logging into your members area. We use the most efficient teaching methods to take you from zero to ninja in just 8 weeks.</p>
         </div>
     </div>
     <div class="hero white">
@@ -103,7 +61,7 @@ body {
     <div class="hero blue">
         <div class="content">
             <h1>Outline of the bootcamp</h1>
-            <h2>Week 1 – BASH, HTML and Wireframes ~ 2.5 hours</h2>
+            <h2>Week 1 – BASH, HTML and Wireframes</h2>
             <ul>
                 <li> ~60m - Before we jump into HTML, you will learn BASH, the linux programming language. After learning BASH, you can put on your resume that you know how to use linux machines</li>
                 <li> ~60m - Introduction to HTML – In this short lesson you will learn all you need to know about HTML</li>
@@ -113,7 +71,7 @@ body {
     </div>
     <div class="hero black">
         <div class="content">
-            <h2>Week 2 – CSS Basics ~ 6 hours</h2>
+            <h2>Week 2 – CSS Basics</h2>
 
             <ul>
                 <li> ~30m – How to use Trello to manage your projects, many companies favor Trello over JIRA because of its UI and simplicity</li>
@@ -129,7 +87,7 @@ body {
     </div>
     <div class="hero white">
         <div class="content">
-            <h2>Week 3 – CSS Mastery ~ 6 hours</h2>
+            <h2>Week 3 – CSS Mastery</h2>
             <?php
             $bullets = array(
               '~60m - CSS Advanced selectors – after you master this skill you will become a true CSS Ninja',
@@ -150,7 +108,7 @@ body {
     </div>
     <div class="hero blue">
         <div class="content">
-            <h2>Week 4 – Javascript Ninjitsu ~6 hours</h2>
+            <h2>Week 4 – Javascript Ninjitsu</h2>
             <?php
             $bullets = array(
                 '~60m – Learn more Javascript logic such as conditionals & while loops',
@@ -262,11 +220,11 @@ body {
             <p>Videos will be available in the members area immediately after purchase</p>
             
             <p>Get the full stack bootcamp now for only $49.99</p>
-            <p class="center"><button class="ctaButton">Get it Now</button></p>
+            <p class="center"><a href="<?=$paymentLink?>"><button class="ctaButton">Get it Now</button></a></p>
 
-            <p>All the videos are paced so that you can have time to prctice on your own. In the first week you can access the first week's courses and in week two, you will unlock week 2's courses, and so on. </p>
+            <p>All the videos are paced so that you can have time to practice on your own. In the first week you can access the first week's courses and in week two, you will unlock week 2's courses, and so on. </p>
 
-            <p>Every several weeks there will be a project to do. For maximum benefit, it is recommended that you do these projects as if you were  astudent enrolled in the live class. </p>
+            <p>Every several weeks there will be a project to do. For maximum benefit, it is recommended that you do these projects as if you were a student enrolled in the live class. </p>
 
             <p>&nbsp;</p>
         </div>
