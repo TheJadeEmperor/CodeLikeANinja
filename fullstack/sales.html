@@ -11,13 +11,14 @@
 </nav>
 
 <div class="container hero black">
-    <div class="box">
-        <h1>Launch Your Web Developer Career in just 8 weeks! </h1>
+    <div class="headline">
+        <h1>Launch Your <span class="orange bold">Web Developer</span> Career in just <span class="bigger bold"><i>8 weeks</i>!</span> </h1>
+        <p>Go from zero to ninja master with our <span class="orange">Full Stack</span> course</p>
     </div>
-    <div class="box code">
+    <div class="headline">
         
         <br /><br />
-
+        <div class="code">
         <span class="lightOrange">cssIsEasy { <span class="blink">&nbsp;|</span><br />
         <span class="lightBlue tab"> easy: </span> <span class="yellow">1;</span> <span class="comment">//be a css ninja in a few weeks</span><br />
         <span class="lightBlue tab"> fun: </span><span class="yellow"> 1; </span> <span class="comment">//the best way to learn coding</span> <br />
@@ -29,65 +30,96 @@
 
         <span class="lightOrange">fullStackCourse { </span><br />
         <span class="lightBlue tab"> length:</span><span class="yellow">>= 100 hours; </span></span><br />
-        <span class="lightBlue tab"> languages: </span><span class="yellow"> HTML CSS JS jQuery MySQL PHP </span><br />
-        <span class="lightBlue tab"> include:</span><span class="yellow">real world examples</span> <br />
-        <span class="lightBlue tab"> exercises:</span><span class="yellow">scenarios for skill sharpening</span> <br />
-        <span class="lightBlue tab"> projects:</span><span class="yellow">to test your skills</span> <br />
+        <span class="lightBlue tab"> languages: </span><span class="yellow"> HTML <span class="green">CSS</span> JavaScript <span class="orange">jQuery</span> MySQL <span class="pink bold">PHP</span> BASH</span><br />
+        <span class="lightBlue tab"> include: </span><span class="yellow">real world examples</span> <br />
+        <span class="lightBlue tab"> exercises: </span><span class="yellow">scenarios for skill sharpening</span> <br />
+        <span class="lightBlue tab"> projects: </span><span class="yellow">to test your skills</span> <br />
         <span class="lightOrange">} </span><br />
-
+    </div>
     </div>
   </div>
 
-	<div class="hero black">
+	<div class="hero hero2">
         <div class="content">
             
-            <p>Our comprehensive video course will guide you step by step in the process – from launching your first website to starting your own career! </p>
+            <p>This is NOT just a coding course. I teach you ALL the essential skills of being a web dev, including using Github, making wireframes, and even interview advice. </p>
 
-            <p>This Full Stack course has over 100 hours of content. You can go back and review it at any time by logging into your members area. We use the most efficient teaching methods to take you from zero to ninja in just 8 weeks.</p>
+            <p>This Full Stack course has over 100 hours of content. You can log into the members area at any time to review the in depth videos. We use the most efficient teaching methods to take you from zero to code ninja in just 8 weeks.</p>
+
         </div>
     </div>
-    <div class="hero white">
+    <div class="hero hero1">
         <div class="content">
-            <h1>What makes our video course different? </h1>
+        
             <p>Hi, my name is Benjamin Louie, and I have been a web developer for the past 14 years and I have been teaching web development for 1 year. Unlike other professors, I teach from work experience in my career. Many online courses can teach theory only, as they have not worked a single day in the field. My classes also teach theory, but we spend more time on real world examples.</p>
 
             <p>I know what companies want from an employee and what employers look for in interviews. My classes cover projects I have done for corporations. In addition to coding, I give some invaluable interview advice in the courses.</p>
 
             <p>Unlike other courses, where the teacher speaks to an empty room, you will watch me interact with my students who took the bootcamp, where they ask me questions, questions that you might have. In these classes, students submit websites to me so I can recreate them from scratch using the concepts they’ve learned thus far. As far as I know, no one does this. </p>
 
-            <p>Each module has exercises for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test. It is recommended you do not skip the projects, otherwise you wll not become a true code ninja.</p>
+            <p>Each module has exercises for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test. It is recommended you do not skip the projects, otherwise you will not become a true code ninja.</p>
         </div>
     </div>
-    <div class="hero blue">
-        <div class="content">
-            <h1>Outline of the bootcamp</h1>
-            <h2>Week 1 – BASH, HTML and Wireframes</h2>
-            <ul>
-                <li> ~60m - Before we jump into HTML, you will learn BASH, the linux programming language. After learning BASH, you can put on your resume that you know how to use linux machines</li>
-                <li> ~60m - Introduction to HTML – In this short lesson you will learn all you need to know about HTML</li>
-                <li> ~30m – You will learn how to make mockups using draw.io – it is crucial to wireframe your website before you write any code</li>
-            </ul>
+    <div class="hero hero2">
+       
+        <div class="content">  
+            
+        <h1>Outline of the bootcamp</h1>
+        <h2>Week 1 – BASH, HTML and Wireframes</h2> 
+            <img src="images/thumb_0614.jpg" class="floatLeft" alt="full stack course" /> 
+
+            <?php
+            $bullets = array(
+                '~60m - Before we jump into HTML, you will learn BASH, the linux programming language. After learning BASH, you can put on your resume that you know how to use linux machines', 
+                '~60m - Introduction to HTML – In this short lesson you will learn all you need to know about HTML',
+                '~30m – You will learn how to make mockups using draw.io – it is crucial to wireframe your website before you write any code',
+            );
+            
+function writeBullets ($bullets) {
+    $evenOdd = 0;
+    
+    foreach($bullets as $points) {
+        if($evenOdd % 2 == 0) $class="textColor1"; else $class = "textColor2";
+
+        $bText .= '<li class="'.$class.'"><i class="fa-sharp fa-solid fa-user-ninja"></i>'.$points.'</li>';
+      $evenOdd++;
+    }
+    $ulText .= '<ul>'.$bText.'</ul>';
+    return $ulText; 
+}
+ 
+echo writeBullets($bullets);
+
+            ?>
+        </div>
         </div>
     </div>
-    <div class="hero black">
+    <div class="hero hero1">
         <div class="content">
             <h2>Week 2 – CSS Basics</h2>
-
-            <ul>
-                <li> ~30m – How to use Trello to manage your projects, many companies favor Trello over JIRA because of its UI and simplicity</li>
-                <li> ~60m – Github crash course – absorb everything you need to know about using Github to save your code, including creating a repository, cloning a repo, creating branches and solving conflicts</li>
-                <li>~60m – Master the crucial CSS box model for margins and padding</li>
-                <li>~60m – Demystify the CSS display-block model and align elements easily</li>
-                <li>~60m – Master responsive design, a must-have skill in our mobile-dominated world</li>
-                <li>~30m – Manipulate font sizes using px and rem</li>
-                <li>~60m – Watch as students send me random websites and I re-create them from scratch using what we’ve learned</li>
-            </ul>
+            <img src="images/thumb_0621.jpg" class="floatRight" alt="full stack course" />
+ 
+            <?php
+            $bullets = array(
+                '~30m – How to use Trello to manage your projects, many companies favor Trello over JIRA because of its UI and simplicity',
+                '~60m – Github crash course – absorb everything you need to know about using Github to save your code, including creating a repository, cloning a repo, creating branches and solving conflicts',
+                '~60m – Master the crucial CSS box model for margins and padding',
+                '~60m – Demystify the CSS display-block model and align elements easily',
+                '~60m – Master responsive design, a must-have skill in our mobile-dominated world',
+                '~30m – Manipulate font sizes using px and rem',
+                '~60m – Watch as students send me random websites and I re-create them from scratch using what we’ve learned'
+            );
+            
+            echo writeBullets($bullets);
+            ?>
 
         </div>
     </div>
-    <div class="hero white">
+    <div class="hero hero2">
         <div class="content">
             <h2>Week 3 – CSS Mastery</h2>
+
+            <img src="images/thumb_0623.jpg" class="floatRight" alt="full stack course" /> 
             <?php
             $bullets = array(
               '~60m - CSS Advanced selectors – after you master this skill you will become a true CSS Ninja',
@@ -95,20 +127,18 @@
               '~60m – CSS positions – how to position images and other elements', 
             '~60m – How to use the al-important flexbox in responsive design',
             '~120m – Learn Javascript basics',
-            '~120m -  Learn Javascript loops and logic',
+            '~120m - Learn Javascript loops and logic',
             );
             
-            echo '<ul>';
-            foreach($bullets as $points) {
-              echo '<li>'.$points.'</li>';
-            }
-            echo '</ul>';
+            echo writeBullets($bullets);
             ?>
         </div>
     </div>
-    <div class="hero blue">
+    <div class="hero hero1">
         <div class="content">
             <h2>Week 4 – Javascript Ninjitsu</h2>
+
+            <img src="images/thumb_0628.jpg" class="floatRight" alt="full stack course" /> 
             <?php
             $bullets = array(
                 '~60m – Learn more Javascript logic such as conditionals & while loops',
@@ -119,15 +149,11 @@
                 '~60m – Learn PHP, your first server side language – generate dynamic, websites and take your first step to becoming a full stack ninja'
             );
             
-            echo '<ul>';
-            foreach($bullets as $points) {
-              echo '<li>'.$points.'</li>';
-            }
-            echo '</ul>';
+            echo writeBullets($bullets);
             ?>
         </div>
     </div>
-    <div class="hero white" id="week5">
+    <div class="hero hero2" id="week5">
         <div class="content">
             <h2>Week 5 – PHP Power</h2>
             <?php
@@ -142,15 +168,11 @@
                 ~60m – Interview advice – My students and I discuss what interviews are like and I give them interview advice',                
             );
             
-            echo '<ul>';
-            foreach($bullets as $points) {
-              echo '<li>'.$points.'</li>';
-            }
-            echo '</ul>';
+            echo writeBullets($bullets);
             ?>
         </div>
     </div>
-    <div class="hero blue" id="week6">
+    <div class="hero hero1" id="week6">
         <div class="content">
             <h2>Week 6 – PHP Mastery</h2>
             <?php
@@ -163,15 +185,11 @@
                 '~60m – Introduction to MYSQL databases – how to use databases to store information permanently',                 
             );
             
-            echo '<ul>';
-            foreach($bullets as $points) {
-              echo '<li>'.$points.'</li>';
-            }
-            echo '</ul>';
+            echo writeBullets($bullets);
             ?>
         </div>
     </div>
-    <div class="hero white" id="week7">
+    <div class="hero hero2" id="week7">
         <div class="content">
             <h2>Week 7 – MySQL Databases</h2>
             <?php
@@ -183,16 +201,12 @@
                 '~120m – Introduction to classes & objects – here you learnt he basics of object oriented programming and how it applies to web development',                             
             );
             
-            echo '<ul>';
-            foreach($bullets as $points) {
-              echo '<li>'.$points.'</li>';
-            }
-            echo '</ul>';
+            echo writeBullets($bullets);
             ?>
         </div>
     </div>
 
-    <div class="hero blue" id="week8">
+    <div class="hero hero1" id="week8">
         <div class="content">
             <h2>Week 8 ~ Intro to Wordpress </h2>
             <?php
@@ -204,27 +218,26 @@
                 '~60m - Review of everything we’ve learned',                    
             );
             
-            echo '<ul>';
-            foreach($bullets as $points) {
-              echo '<li>'.$points.'</li>';
-            }
-            echo '</ul>';
+            echo writeBullets($bullets);
             ?>
         </div>
     </div>
 
-    <div class="hero white" id="cta">
+    <div class="hero hero2" id="cta">
         <div class="content">
 
             <h1>Be A Full Stack Ninja for $49.99</h1>
-            <p>Videos will be available in the members area immediately after purchase</p>
+            
+            <p>Members area access will be sent to your inbox immediately after purchase - please remember to check your spam folder.</p>
             
             <p>Get the full stack bootcamp now for only $49.99</p>
             <p class="center"><a href="<?=$paymentLink?>"><button class="ctaButton">Get it Now</button></a></p>
 
-            <p>All the videos are paced so that you can have time to practice on your own. In the first week you can access the first week's courses and in week two, you will unlock week 2's courses, and so on. </p>
+            <p>All the videos are paced so that you can have time to practice on your own. In the first week you can access the first week's courses and in week two, you will unlock week two's courses, and so on. </p>
 
             <p>Every several weeks there will be a project to do. For maximum benefit, it is recommended that you do these projects as if you were a student enrolled in the live class. </p>
+
+            <p>Remember, we do not teach you how to memorize syntax and keywords, we drill for skill by having you practice what you've learned. </p>
 
             <p>&nbsp;</p>
         </div>

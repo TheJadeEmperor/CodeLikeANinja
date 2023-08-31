@@ -3,13 +3,15 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Code Like a Ninja Bootcamp</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-       
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-
+<head>
+    <meta charset="UTF-8">
+    <title>Code Like a Ninja Bootcamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/ninja.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0c72afa510.js" crossorigin="anonymous"></script>
         
     <!-- Reddit Pixel -->
     <script>
@@ -27,13 +29,13 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
     
         .menu-bar {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             background-color: #FFFFFF;
             color: #000000;
             padding: 10px;
         }
-    
         .logo {
             display: flex;
             align-items: center;
@@ -50,6 +52,17 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
     
       .menu-text {
           text-align: right;
+      }
+
+      @media (max-width: 768px) {
+        .menu-text {
+            margin: 10px 0 10px 0;
+            width: 100%;
+        }
+
+        .menu-bar {
+          justify-content: center;
+        }
       }
     
     .menu-text a {
@@ -71,14 +84,22 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
         justify-content: center;
         align-items: center;
         min-height: 300px;
-        color: white;
+        color: #E0E0E0;
         font-size: 24px;
-        padding: 0px 7%;
+        padding: 20px 7%;
     }
     
     .hero h1 {
         text-align: center;
         font-size: 1.5em
+    }
+
+    .hero1 {
+      background-color: #2c2c32;
+    }
+
+    .hero2 {
+      background-color: #222229;
     }
     
     .black {
@@ -89,11 +110,7 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
         background-color: white;
         color: black;
     }
-    
-    .blue {
-        background-color: rgb(80, 80, 203);
-    }
-    
+        
     .ctaButton {
         background-color: #0066b8;
         border: none;
@@ -115,43 +132,31 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
     .center {
         text-align: center;
     }
-     
-      ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-      
-      ul li {
-        position: relative;
-        padding-left: 25px;
-        margin-bottom: 10px;
-      }
-      
-      ul li::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 20px;
-        height: 20px;
-        background-image: url('images/shuriken.png');  
-        background-size: cover;
-      }
-     
-    
     .container {
       display: flex; /* Use flexbox */
+      flex-wrap: wrap; 
     }
     
-    .box {
+    .headline {
       flex: 1; /* Distribute available space equally */
-      
       padding: 20px;
     }
 
+    .headline h1 {
+      text-align: left;
+    }
+
 /* display code */
-    .code {
-    font-size: 14px;
+.code {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(45, 45, 46) 0%, rgba(52, 52, 57, 0) 35%, rgb(36, 37, 37) 100%);
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .tab {
@@ -170,9 +175,25 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
     color: rgb(249, 196, 97);
 }
 
+.pink {
+  color:rgb(230, 108, 198)
+}
+
+.orange {
+  color: #f5a425;
+}
+
 .comment {
     color: rgb(59, 127, 59) ;
     margin-left: 1em;
+}
+
+.green {
+  color: rgb(53, 213, 53) ;
+}
+
+.bigger {
+  font-size: 1.2em;
 }
 
     @keyframes blink {
@@ -190,7 +211,40 @@ $paymentLink = 'https://buy.stripe.com/5kA02K7isc8pbEAaEE';
         color:#FFFFFF;
     }
 
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      
+      ul li {
+        position: relative;
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+
+      i.fa-user-ninja {
+        margin-right: 10px;
+      }
+
+      .textColor1 {
+        color: #E0E0E0;
+      }
+
+      .textColor2 {
+        color: #d8c3c3;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      }
+      
+      .floatLeft {
+        float: left;
+        margin: 0 5% 5% 0;
+      }
+      .floatRight {
+        float: right;
+        margin-left: 5%;
+      }
+
     </style>
     </head>
     <body>
-        

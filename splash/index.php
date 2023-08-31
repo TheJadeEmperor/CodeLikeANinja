@@ -1,5 +1,6 @@
 <?php
 $alt = 'Code Ninja';
+$dir = '../';
 ?>
 
 <!DOCTYPE html>
@@ -22,22 +23,6 @@ $alt = 'Code Ninja';
 
 
     <script>
-var NoExitPage = false; 
-
-function ExitPage() { 
-    if(NoExitPage == false) { 
-    NoExitPage=true; 
-    location.href='<?=$landingURL?>'; 
-    
-    return"***********************************************\n\n"+ 
-    " WAIT! Sign up to get your FREE Cheat Sheet! \n\n"+ 
-    " Gain mastery of full stack with our bootcamp! \n\n"+ 
-    " Start your web dev career with us!\n\n"+ 
-    "***********************************************"; 
-    } 
-} 
-
-
 function validateEmail(email) { /* validation for email field */
     console.log('validateEmail ' + email);
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3,4})+$/.test(email)) {
@@ -65,32 +50,46 @@ function validateEmail(email) { /* validation for email field */
   }
 
   .menu-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFFFFF;
-    color: #000000;
-    padding: 10px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo img {
-    height: 30px;
-    margin-right: 5px;
-  }
-
-  .logo-text {
-    font-weight: bold;
-  }
-
-  .menu-text {
-      text-align: right;
-  }
-  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 10px;
+        }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 5px;
+        }
+    
+      .logo-text {
+        font-weight: bold;
+      }
+    
+      .menu-text {
+          text-align: right;
+      }
+    
+    .menu-text a {
+        color:#000000;
+        text-decoration: none;
+        padding: 0 20px;
+    }
+    
+      a:visited {
+        color: #2d2b2b;
+      }
+    
+      a:hover {
+        color: #b6c3f2; 
+      }
+    
   .container {
     display: flex;
   }
@@ -192,11 +191,7 @@ function validateEmail(email) { /* validation for email field */
     border: none; 
     cursor: pointer;
   }
-
-  a:visited {
-    color: #FFF;
-  }
-
+ 
   a:hover {
     color: #b6c3f2;
   }
@@ -205,6 +200,16 @@ function validateEmail(email) { /* validation for email field */
 </head>
 <body onbeforeunload="return ExitPage();">
  
+<nav class="menu-bar" title="<?=$alt?>">
+    <div class="logo">
+        <img src="../images/ninja.jpg" alt="<?=$alt?>"><span class="logo-text">Code Like A Ninja</span>
+    </div>
+    <div class="menu-text">
+        <a href="<?=$dir?>splash">Newsletter</a>
+        <a href="<?=$dir?>">Full Stack</a>
+        <a href="<?=$dir?>members">Login</a>
+    </div>
+</nav>
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
