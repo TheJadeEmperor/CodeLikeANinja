@@ -190,7 +190,7 @@ if($pageView) {
     else { //unique views
         $res = updateUniqueViews($pageView);  
     } 
-    setcookie('lastView', date('m/d/Y', time()));
+    //setcookie('lastView', date('m/d/Y', time()));
 }
 
 ?>

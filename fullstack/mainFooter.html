@@ -1,7 +1,71 @@
+<style>
+	.footer {
+	  background: #333;
+	  color: white;
+	  padding: 20px;
+	  display: flex;
+	  justify-content: space-between;
+	}
+  
+	.footer-left {
+	  flex: 1;
+	  display: flex;
+	  align-items: center;
+	}
+  
+	.footer-logo {
+	  margin-right: 10px;
+	  color: white; 
+	  text-decoration: none;
+	}
 
-		 
-	<!--<footer  class="hero black" id="footer">
-		 
-	</footer>-->
+	.footer-logo img {
+		max-width: 40px;
+	}
+  
+	.footer-links {
+	  display: flex;
+	  align-items: center;
+	}
+  
+	.footer-links a {
+	  text-decoration: none;
+	  color: white;
+	  margin-right: 20px;
+	}
+  
+	.footer-right {
+	  flex: 1;
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	}
+  
+	.social-media-button {
+	  margin-left: 10px;
+	  color: white;
+	  font-size: 24px;
+	  text-decoration: none;
+	}
+  </style>
+  
+  <div class="footer">
+	<div class="footer-left">
+	  <a href="#" class="footer-logo"><img src="../images/ninja.png" alt="<?=$alt?>"> 
+	  </a>
+	  <div class="footer-links">
+		<a href="./splash">Newsletter</a>
+		<a href="./">Full Stack</a>
+		<a href="./members">Login</a>
+	  </div>
+	</div>
+
+	<div class="footer-right">
+	  <a href="#" class="social-media-button"><i class="fab fa-reddit"></i></a>
+	  <a href="https://www.instagram.com/full.stack.ninja" class="social-media-button"><i class="fab fa-instagram"></i></a>
+	  <a href="mailto:kaiba.corporation.llc@gmail.com" class="social-media-button"><i class="far fa-envelope"></i></a>
+	</div>
+  </div>
+  
 </body>
 </html>

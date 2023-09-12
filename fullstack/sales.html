@@ -1,14 +1,4 @@
 
-<nav class="menu-bar" title="<?=$alt?>">
-    <div class="logo">
-        <img src="../images/ninja.jpg" alt="<?=$alt?>"><span class="logo-text">Code Like A Ninja</span>
-    </div>
-    <div class="menu-text">
-        <a href="./splash">Newsletter</a>
-        <a href="./">Full Stack</a>
-        <a href="./">Login</a>
-    </div>
-</nav>
 
 <div class="container hero black">
     <div class="headline">
@@ -60,19 +50,21 @@
             <p>Each module has exercises for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test. It is recommended you do not skip the projects, otherwise you will not become a true code ninja.</p>
         </div>
     </div>
-    <div class="hero hero2">
+    <div class="hero hero2" id="week1">
        
         <div class="content">  
             
         <h1>Outline of the bootcamp</h1>
         <h2>Week 1 – BASH, HTML and Wireframes</h2> 
-            <img src="images/thumb_0614.jpg" class="floatLeft" alt="full stack course" /> 
+            
+        <img src="images/thumb_0614.jpg" class="floatLeft" alt="full stack course" /> 
 
             <?php
             $bullets = array(
+                '~30m – Intro to Web Dev, Client vs Server model, career paths of a web dev',
                 '~60m - Before we jump into HTML, you will learn BASH, the linux programming language. After learning BASH, you can put on your resume that you know how to use linux machines', 
                 '~60m - Introduction to HTML – In this short lesson you will learn all you need to know about HTML',
-                '~30m – You will learn how to make mockups using draw.io – it is crucial to wireframe your website before you write any code',
+                '~30m – You will learn how to make <i class="fa-solid fa-diagram-project"></i> mockups using draw.io  – it is crucial to wireframe your website before you write any code',
             );
             
 function writeBullets ($bullets) {
@@ -94,7 +86,7 @@ echo writeBullets($bullets);
         </div>
         </div>
     </div>
-    <div class="hero hero1">
+    <div class="hero hero1" id="week2">
         <div class="content">
             <h2>Week 2 – CSS Basics</h2>
             <img src="images/thumb_0621.jpg" class="floatRight" alt="full stack course" />
@@ -102,7 +94,7 @@ echo writeBullets($bullets);
             <?php
             $bullets = array(
                 '~30m – How to use Trello to manage your projects, many companies favor Trello over JIRA because of its UI and simplicity',
-                '~60m – Github crash course – absorb everything you need to know about using Github to save your code, including creating a repository, cloning a repo, creating branches and solving conflicts',
+                '~60m – Github <i class="fa-solid fa-code-merge"></i> crash course – absorb everything you need to know about using Github to save your code, including creating a repository, cloning a repo, creating branches and solving conflicts',
                 '~60m – Master the crucial CSS box model for margins and padding',
                 '~60m – Demystify the CSS display-block model and align elements easily',
                 '~60m – Master responsive design, a must-have skill in our mobile-dominated world',
@@ -115,11 +107,11 @@ echo writeBullets($bullets);
 
         </div>
     </div>
-    <div class="hero hero2">
+    <div class="hero hero2" id="week3">
         <div class="content">
-            <h2>Week 3 – CSS Mastery</h2>
+            <h2>Week 3 – CSS Ninjitsu</h2>
 
-            <img src="images/thumb_0623.jpg" class="floatRight" alt="full stack course" /> 
+            <img src="images/thumb_0623.jpg" class="floatLeft" alt="full stack course" /> 
             <?php
             $bullets = array(
               '~60m - CSS Advanced selectors – after you master this skill you will become a true CSS Ninja',
@@ -134,7 +126,7 @@ echo writeBullets($bullets);
             ?>
         </div>
     </div>
-    <div class="hero hero1">
+    <div class="hero hero1" id="week4">
         <div class="content">
             <h2>Week 4 – Javascript Ninjitsu</h2>
 
@@ -156,6 +148,9 @@ echo writeBullets($bullets);
     <div class="hero hero2" id="week5">
         <div class="content">
             <h2>Week 5 – PHP Power</h2>
+
+            <img src="images/thumb_0628.jpg" class="floatLeft" alt="full stack course" /> 
+
             <?php
             $bullets = array(
                 '~60m – Bootstrap Part 2 – We continue to drill Bootstrap skills until you know it by heart and this module also covers gradients to beautify your designs',
@@ -174,7 +169,10 @@ echo writeBullets($bullets);
     </div>
     <div class="hero hero1" id="week6">
         <div class="content">
-            <h2>Week 6 – PHP Mastery</h2>
+            <h2>Week 6 – Advanced PHP</h2>
+
+            <img src="images/thumb_0628.jpg" class="floatRight" alt="full stack course" /> 
+          
             <?php
             $bullets = array(
                 '~60m – The difference between include and require keywords and how to use them to retrieve code from other files – this is essential if your code base starts to get large',
@@ -191,7 +189,10 @@ echo writeBullets($bullets);
     </div>
     <div class="hero hero2" id="week7">
         <div class="content">
-            <h2>Week 7 – MySQL Databases</h2>
+            <h2>Week 7 – MySQL Mastery</h2>
+
+            <img src="images/thumb_0714.jpg" class="floatLeft" alt="full stack course" /> 
+
             <?php
             $bullets = array(
                 '~60m – How to connect MySQL to PHP and become a backend ninja',
@@ -203,12 +204,16 @@ echo writeBullets($bullets);
             
             echo writeBullets($bullets);
             ?>
+
         </div>
     </div>
 
     <div class="hero hero1" id="week8">
         <div class="content">
             <h2>Week 8 ~ Intro to Wordpress </h2>
+
+            <img src="images/thumb_0630.jpg" class="floatRight" alt="full stack course" /> 
+
             <?php
             $bullets = array(
                 '~60m - Introduction to Wordpress, the #1 used platform on the internet, a must have skill if you want to be a web dev',
