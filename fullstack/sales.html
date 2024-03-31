@@ -1,8 +1,6 @@
-
-
 <div class="container hero black">
     <div class="headline">
-        <h1>Launch Your <span class="orange bold">Web Developer</span> Career in just <span class="bigger bold"><i>8 weeks</i>!</span> </h1>
+        <h1>Launch Your <span class="orange bold">Web Developer</span> Career in just <span class="bigger bold"><i>12 weeks</i>!</span> </h1>
         <p>Go from zero to ninja master with our <span class="orange">Full Stack</span> course</p>
     </div>
     <div class="headline">
@@ -29,25 +27,46 @@
     </div>
   </div>
 
+<?php
+function writeBullets ($bullets) {
+$evenOdd = 0;
+
+foreach($bullets as $points) {
+    if($evenOdd % 2 == 0) $class="textColor1"; else $class = "textColor2";
+
+    $bText .= '<li class="'.$class.'"><i class="fa-sharp fa-solid fa-user-ninja"></i>'.$points.'</li>';
+    $evenOdd++;
+}
+$ulText .= '<ul>'.$bText.'</ul>';
+return $ulText; 
+}
+?>
+
 	<div class="hero hero2">
         <div class="content">
             
-            <p>This is NOT just a coding course. I teach you ALL the essential skills of being a web dev, including using Github, making wireframes, and even interview advice. </p>
+            <p>Full stack development is the backbone of modern web applications, encompassing both front-end and back-end technologies. By mastering a comprehensive set of skills, you'll have the flexibility to bring your ideas to life, from crafting captivating user interfaces to building robust server-side solutions. With the demand for full stack developers on the rise, now is the perfect time to embark on your journey towards expertise in this exciting field.</p>
+<?php
+$bullets = array(
+    "Customized curriculum: These 1 on 1 classes are customized for you, to fix your weaknesses and maximize your strengths.",
+    "Hands-On Projects: Theory is important, but nothing beats hands-on experience.", "Throughout the bootcamp, you'll work on real-world projects that challenge you to apply your newfound knowledge in practical scenarios.",
+    "Dynamic classes: Our classes are nothing like a lecture, where you’re bored to tears. Our instructors are fun, creative, and most importantly, knowledgeable in the field of full stack dev.",
+);
 
-            <p>This Full Stack course has over 100 hours of content. You can log into the members area at any time to review the in depth videos. We use the most efficient teaching methods to take you from zero to code ninja in just 8 weeks.</p>
+echo writeBullets($bullets);
+?>
+         
+            
 
         </div>
     </div>
     <div class="hero hero1">
         <div class="content">
         
-            <p>Hi, my name is Benjamin Louie, and I have been a web developer for the past 14 years and I have been teaching web development for 1 year. Unlike other professors, I teach from work experience in my career. Many online courses can teach theory only, as they have not worked a single day in the field. My classes also teach theory, but we spend more time on real world examples.</p>
+            <p>This is NOT just a coding course. You will learn ALL the essential skills of being a web dev, including using Github, making wireframes, and even interview advice. </p>
 
-            <p>I know what companies want from an employee and what employers look for in interviews. My classes cover projects I have done for corporations. In addition to coding, I give some invaluable interview advice in the courses.</p>
-
-            <p>Unlike other courses, where the teacher speaks to an empty room, you will watch me interact with my students who took the bootcamp, where they ask me questions, questions that you might have. In these classes, students submit websites to me so I can recreate them from scratch using the concepts they’ve learned thus far. As far as I know, no one does this. </p>
-
-            <p>Each module has exercises for you to practice what you’ve learned. Also included in this video course are projects you can do to put your skills to the test. It is recommended you do not skip the projects, otherwise you will not become a true code ninja.</p>
+            <p>This Full Stack bootcamp meets 3 nights a week, flexible to your schedule. We use the most efficient teaching methods to take you from zero to code ninja in just 12 weeks.</p>
+ 
         </div>
     </div>
     <div class="hero hero2" id="week1">
@@ -67,19 +86,6 @@
                 '~30m – You will learn how to make <i class="fa-solid fa-diagram-project"></i> mockups using draw.io  – it is crucial to wireframe your website before you write any code',
             );
             
-function writeBullets ($bullets) {
-    $evenOdd = 0;
-    
-    foreach($bullets as $points) {
-        if($evenOdd % 2 == 0) $class="textColor1"; else $class = "textColor2";
-
-        $bText .= '<li class="'.$class.'"><i class="fa-sharp fa-solid fa-user-ninja"></i>'.$points.'</li>';
-      $evenOdd++;
-    }
-    $ulText .= '<ul>'.$bText.'</ul>';
-    return $ulText; 
-}
- 
 echo writeBullets($bullets);
 
             ?>
@@ -228,11 +234,62 @@ echo writeBullets($bullets);
         </div>
     </div>
 
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .left {
+            float: left;
+            margin-right: 20px; /* Adjust margin as needed */
+        }
+        .headshot img {
+            border-radius: 50%; /* Make the image circular */
+            width: 100px; /* Adjust image size */
+            height: 100px; /* Adjust image size */
+            margin-right: 20px; /* Adjust margin as needed */
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
+
     <div class="hero hero2" id="cta">
         <div class="content">
 
-            <h1>Be A Full Stack Ninja for $49.99</h1>
+
+ <div class="container">
+    <div class="headshot">
+            <img src="images/headshot.jpg" alt="Code Ninja" width="100px">
+        </div>
+        <div class="right">
+            <h2>About the instructor</h2> 
+        </div>
+    </div> 
+
+        <p>Benjamin Louie has been a web developer for the past 14 years and has taught programming classes at City Tech University and teaches free classes on meetup on his spare time. Many bootcamp instructors teach from theory only, not having worked a single day in the field, while Benjamin teaches from his career experience. He knows what employers look for in employees and his classes covers projects has done for corporations. </p>
             
+        <p>Each module has been meticulously designed to keep you on your toes and each module has an exercise for you to practice what you’ve learned and there are projects to put your web design skills to the test. </p>
+
+           <p> Be a full stack ninja for only $699</p>
+            
+           <p class="center"><a href="mailto:<?=$adminEmail?>"><button class="ctaButton">Get it Now</button></a></p>
+            
+            <p>If you take a bootcamp from an accredited coding agency, it would cost you up to $14,000 out of pocket... with no financial aid.</p> 
+            <p>If you take a university course, it would cost you $2500.</p> 
+            <p>But you can have the same knowledge and quality at your hands for only $699! </p>
+            <p>Several payment options available</p>
+            
+            <p class="center">Email <a href="mailto:<?=$adminEmail?>"><button class="ctaButton"><?=$adminEmail?></button></a> for details</p> 
+                
+            <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            <h1>But I’m not ready for the bootcamp!</h1>
+
+            <p>It’s alright, there’s a time and pace for everything. If you just want to dip your toes into coding but are not ready to make a jump, you can can get access to the Full Stack video course. </p>
+            
+            <p>Unlike other courses, where the teacher speaks to an empty room, you will watch the teacher interact with his students who took the bootcamp, where they ask him questions, questions that you might have. In these classes, students submit websites to him so he can recreate them from scratch using the concepts they’ve learned thus far. As far as I know, no one else does this. </p>
+
+         
             <p>Members area access will be sent to your inbox immediately after purchase - please remember to check your spam folder.</p>
             
             <p>Get the full stack bootcamp now for only $49.99</p>
