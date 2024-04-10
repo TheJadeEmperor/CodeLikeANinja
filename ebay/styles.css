@@ -12,4 +12,5 @@ p { text-align: left; }
 
 #store {
     background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center;
+    height: 300vh; padding: 50px;
 }
