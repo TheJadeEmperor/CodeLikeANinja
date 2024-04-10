@@ -1,5 +1,10 @@
 #shop {
-background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; height: 300vh; padding: 50px
+    background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; 
+    height: 300vh; padding: 50px;
 }
 
-p {text-align: left;}
+p { text-align: left; }
+
+.menuItem {
+    color: #fff; text-decoration: none; margin-right: 5%;
+}
