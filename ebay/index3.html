@@ -1,16 +1,7 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://codelikeaninja.com/ebay/styles.css">
-</head>
-<body>
+<div id="store" style="background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; height: 200vh;">
 
-
-<div id="store" style="">
-
+ 
     
     <div style="display: flex; justify-content: center; align-items: flex-start; padding: 20px; width: 80%; ">
         <a href="#store" style="color: #fff; text-decoration: none; margin-right: 5%;">Store</a>
@@ -23,11 +14,19 @@
 
     <div style="padding: 30px 0 0 0;display: flex; flex-wrap: wrap; align-items: stretch; justify-content: flex-start; color: #fff;  text-align: center; ">
 
+        <style>
+            /* Inline media query */
+            @media screen and (max-width: 768px) {
+              .title {
+                flex: 1 1 100%
+              }
+            }
+        </style>
         
     <div style="flex: 1; min-width: 0;  padding: 20px; box-sizing: border-box;">
         
           <div class="" style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: flex-start;">
-            <div style="flex: 1 1 50%">
+            <div class="title" style="flex: 1 1 50%; ">
                 <h1>PUT STORE TITLE HERE</h1>
     
                 <p>store description goes here<br>
@@ -46,7 +45,7 @@
 </div>
 
 
-<div id="about" style="background-color:#fff;; color: #000; padding-top: 50px; text-align: center; height: 150vh">
+<div id="about" style="background-color:#fff;; color: #000; padding-top: 50px; text-align: center; height: 150px">
 
     <div style="width: 100%; margin: 0 auto;">
         <div style="width: 50%; float: left; box-sizing: border-box; padding: 20px; box-sizing: border-box; padding: 20px; background-image: url('https://codelikeaninja.com/ebay/quality1.png'); background-size: cover; background-position: top; height: 300px;">
