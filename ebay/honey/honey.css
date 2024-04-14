@@ -42,7 +42,7 @@ p {
 }
 
 .aboutLeft {
-    background-image: url('https://codelikeaninja.com/ebay/about_left.png'); background-size: auto; background-position: top; 
+    background-image: url('about_left.png'); background-size: auto; background-position: top; 
     background-repeat: no-repeat;
 }
 
@@ -64,7 +64,7 @@ p {
 }
 
 .beeBG {
-    background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; padding: 50px;
+    background-image: url('body_bg.png'); background-size: cover; background-position: center; padding: 50px;
 }
 
 #shop h1 {
