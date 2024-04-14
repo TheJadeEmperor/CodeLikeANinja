@@ -5,11 +5,11 @@ p { text-align: left; }
     color: #fff; text-decoration: none; margin-right: 5%;
 }
 
-.store {
+#store {
     background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; padding: 50px;
 }
 
-.shop {
+#shop {
     background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; 
     padding: 50px;
 }
