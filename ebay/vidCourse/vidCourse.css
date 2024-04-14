@@ -1,0 +1,11 @@
+a {
+    word-wrap: break-word;
+}
+
+a {
+    color:#f8f4f4;
+}
+
+a:hover {
+    color: rgb(174, 120, 21);
+}
