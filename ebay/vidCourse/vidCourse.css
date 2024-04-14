@@ -3,6 +3,10 @@
     font-size: 18px; padding: 20px 7%;
 }
 
+#headline {
+    font-size: 50px;
+}
+
 a {
     word-wrap: break-word;
 }
