@@ -1,21 +1,101 @@
-
-p { text-align: left; }
-
-.menuItem {
-    color: #fff; text-decoration: none; margin-right: 5%;
+body {
+    color:#e5c6af;
 }
 
-#store {
-    background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; padding: 50px;
+p { 
+    font-size: 20px;
+    text-align: left; }
+
+.menu {
+    display: flex; justify-content: center; align-items: flex-start; padding: 20px;
 }
 
-#shop {
-    background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; 
-    padding: 50px;
+.menu a {
+    color: #f2e7e7; text-decoration: none; 
+    margin-right: 5%;
+}
+
+.menu a:hover {
+    color:#c18a60;
+}
+
+.prodRow {
+    display: flex; flex: 1; flex-wrap: wrap; align-items: stretch; justify-content: flex-start;
+}
+
+.prod {
+    flex: 1 1 50%;
+}
+
+.prod img {
+    max-width: 80%;
 }
 
 @media screen and (max-width: 768px) {
-    .item {
+    .prod {
         flex: 1 1 100%;
     }
 }
+
+#storeContainer:hover {
+    color: #f2e7e7;
+}
+
+.aboutLeft {
+    background-image: url('https://codelikeaninja.com/ebay/about_left.png'); background-size: auto; background-position: top; 
+    background-repeat: no-repeat;
+}
+
+.aboutLeft p {
+    font-size: 20px;
+}
+
+.aboutLeft p:hover {
+    color:#c18a60;
+}
+
+.aboutLeft h1 {
+    font-size: 50px; font-weight: bold;
+}
+
+.aboutLeft h1:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.beeBG {
+    background-image: url('https://codelikeaninja.com/ebay/body_bg.png'); background-size: cover; background-position: center; padding: 50px;
+}
+
+#shop h1 {
+    text-align: center;
+}
+
+#shop h1:hover {
+    color:#c18a60;
+}
+
+#shopText {
+    display: flex; padding: 30px 10%; text-align: left; 
+}
+
+#shopText:hover {
+    color: #f2e7e7;
+}
+
+.circleImg {
+    height: 362px; display: flex; justify-content: center; border-radius: 50%; max-width: 362px; margin: 0 auto 30px; align-items: center; background: #fff; margin-top: 50px
+}
+
+.circleImg:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    #shopText {
+        display: block; 
+    }
+    
+    .circleImg {
+        height: 290px; max-width: 290px; margin: 0 auto 30px; margin-top: 50px
+    }
