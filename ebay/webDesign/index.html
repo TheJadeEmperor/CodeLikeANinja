@@ -1,0 +1,179 @@
+<style>
+    body {
+        background-color: black;
+        color: #fff;
+    }
+    .video-overlay {
+        position: absolute;
+        background-color: rgba(22, 34, 57, 0.85);
+        top: 0;
+        left: 0;
+        bottom: 7px;
+        height: 550px;
+        padding: 10% 20%;
+    }
+    #bg-video {
+        min-width: 100%; 
+        max-width: 100%; 
+        object-fit: cover;
+        z-index: -1;
+    }
+    .caption {
+        text-align: center;
+        color: #fff;
+    }
+
+    .caption h6 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+   .caption h2 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 64px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    em {
+        font-style: normal;
+        color: #f5a425;
+        font-weight: 900;
+    }
+
+    a {
+        color: #f5a425;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .main-button a {
+        background-color: #f5a425;
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        padding: 12px 20px;
+        display: inline-block;
+        outline: none;
+    }
+
+    section.why-us {
+        background-image: url(https://benjaminlouie.com/images/choosing-bg.jpg);
+        background-color: #172238;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 100px;
+        margin-top: 170px;
+    }
+ 
+    .row {
+        padding: 50px
+    }
+
+    .caption p {
+        text-align: left;
+    }
+
+    .contactUs {
+        width: 80%;
+        text-align: center !important; 
+        margin-top: 80px;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .video-overlay {
+            height: 400px;
+        }
+        .caption h2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 34px;
+        } 
+
+        section.why-us {
+            padding-bottom: 100px;
+            margin-top: 160px;
+        }
+    }
+
+</style>
+
+<section class="section main-banner">
+
+    <video autoplay muted loop id="bg-video">
+        <source src="https://benjaminlouie.com/assets/images/group.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            
+            <p class="contactUs">Contact Me to discuss your requirements first. 
+                For more details, please visit us at 
+                <a href="https://benjaminlouie.com/" target="_BLANK">https://benjaminlouie.com/</a>
+            </p>
+
+            <h6>Have a Business Idea?</h6> 
+            <h2>Get <em>Your Website</em> Up and Running Quickly</h2>
+
+            <div class="main-button">
+                <div class="scroll-to-section"><a href="https://benjaminlouie.com/">Discover more</a></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section why-us">
+    <div class="row">
+        <div class="caption">
+            <h2>What is included?</h2>
+
+            <p>A fully customized website of your design</p>
+            
+            <p>A <em>FREE</em> domain name (ex: your_domain.com) </p>
+                    
+            <p>Free professional emails for your domain - up to 10 emails per domain</p>
+            
+            <p><em>FREE</em> web hosting for 30 days - after that it's $3.99/monthly</p>
+                    
+            <p>SEO included - search engine optimization - Your site will be <em>submitted and ranked</em> on Google, Bing, Yahoo and more.</p>       
+
+            <p>Social media integration - tntegrate your website with Facebook, Twitter, Youtube and more</p>        
+            
+            <p>Mobile friendly & responsive designs </p>
+                
+            <p>We are native in <em>English</em> speaking & writing </p>    
+            
+            <p>15 years of experience in web design & development</p>
+                    
+            
+            <h1>On a <em>budget? </em></h1>
+            
+            <p>Payment options available 
+                Pay weekly or monthly 
+                Through Stripe, Paypal, Venmo & more</p>
+
+            <h1>ALREADY HAVE A WEBSITE?</h1>
+            <p>If you need updates, we have solutions for you. Whether it is a one time update or regular updates, we have a package that can fit your needs.
+            </p>
+            
+            <p>Did your previous web designer abandon your website? We can take over where they left off.</p>
+
+            <p class="contactUs">Contact Me to discuss your requirements first. 
+                For more details, please visit us at 
+                <a href="https://benjaminlouie.com/">https://benjaminlouie.com/</a>
+            </p>
+
+        </div>
+    </div>
+ 
+</section>
